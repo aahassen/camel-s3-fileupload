@@ -1,9 +1,9 @@
-Spring Boot Rest API to send SMS message using Twilio
- [Project tutorial](https://javakia.com/blog/send-sms-with-java-twilio/)
+Spring Boot and Apache Camel to upload a file to AWS S3 bucket
+ [Project tutorial](https://javakia.com/blog/uploading-file-to-aws-s3/)
 
-1. Steps to run the service.
-
-`git clone https://github.com/aahassen/sms-api.git`
-
-`cd sms-api`
-run  `spring-boot:run`
+Steps to run the application. <br>
+1. run<br>
+`git clone https://github.com/aahassen/camel-s3-fileupload.git`
+<br>
+2. `cd camel-s3-fileupload`<br>
+3. run  ` mvn spring-boot:run`

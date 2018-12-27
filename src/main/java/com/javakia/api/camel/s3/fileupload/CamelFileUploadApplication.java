@@ -1,11 +1,11 @@
-package com.javakia.microservice.api;
+package com.javakia.api.camel.s3.fileupload;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Main class for SMS-API application. This class will be used as an entry point
- * to the application.
+ * Main class for camel-s3-fileupload application. This class will be used as an
+ * entry point to the application.
  * 
  * @SpringBootApplication annotation is same as
  *                        (@Configuration, @EnableAutoConfiguration,
@@ -15,9 +15,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-public class SMSApplication {
+public class CamelFileUploadApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(SMSApplication.class, args);
+		SpringApplication.run(CamelFileUploadApplication.class, args);
 	}
 
 }
