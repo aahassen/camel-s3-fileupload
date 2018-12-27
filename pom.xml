@@ -1,27 +1,41 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.javakia.microservice</groupId>
-  <artifactId>sms-api</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <description>This is an API to send SMS message</description>
-  <!-- Inherit defaults from Spring Boot -->
-<parent>
-	<groupId>org.springframework.boot</groupId>
-	<artifactId>spring-boot-starter-parent</artifactId>
-	<version>2.1.1.RELEASE</version>
-</parent>
-
-<dependencies>
-	<dependency>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.javakia.microservice</groupId>
+	<artifactId>camel-s3-fileupload</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<description>This Spring Boot API uploads file to AWS S3 bucket using Apache Camel </description>
+	<!-- Inherit defaults from Spring Boot -->
+	<parent>
 		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-web</artifactId>
-	</dependency>
-	
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.1.RELEASE</version>
+	</parent>
+
+	<dependencies>
 	<dependency>
-    <groupId>com.twilio.sdk</groupId>
-    <artifactId>twilio</artifactId>
-    <version>7.20.0</version>
-</dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-web</artifactId>
+   </dependency>
+
+	<dependency>
+		<groupId>org.apache.camel</groupId>
+		<artifactId>camel-spring-boot-starter</artifactId>
+		<version>2.17.0</version>
+	</dependency>
+
+	<dependency>
+		<groupId>org.apache.camel</groupId>
+		<artifactId>camel-aws</artifactId>
+		<version>2.17.0</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3 -->
+	<dependency>
+		<groupId>com.amazonaws</groupId>
+		<artifactId>aws-java-sdk-s3</artifactId>
+		<version>1.11.475</version>
+	</dependency>
+
 </dependencies>
 
 </project>
